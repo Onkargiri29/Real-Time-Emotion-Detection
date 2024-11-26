@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detection System</h1>
+        <h2>Webcam Feed</h2>
+        <div id="video-container">
+            <img id="video-feed" src="emoji.jpg" alt="Video Feed" width="640" height="480">
+        </div>
+        
+        <div class="buttons">
+            <button id="start-button" onclick="startVideoFeed()">Start</button>
+            <button id="stop-button" onclick="stopVideoFeed()">Stop</button>
+        </div>
+    </div>
+
+    <!-- Left side images outside the container -->
+    <div class="image-side left">
+        <img src="/static/happy.jpg" alt="Image 1">
+        <img src="/static/sad.png" alt="Image 2">
+        <img src="/static/angry.png" alt="Image 3">
+    </div>
+    
+    <!-- Right side images outside the container -->
+    <div class="image-side right">
+        <img src="/static/surprise.jpg" alt="Image 4">
+        <img src="/static/neutral.png" alt="Image 5">
+        <img src="/static/fear.png" alt="Image 6">
+    </div>
+
+    <script>
+        let videoFeed = document.getElementById('video-feed');
+        let isVideoRunning = false;
+
+        function startVideoFeed() {
+            if (!isVideoRunning) {
+                videoFeed.src = '/video_feed';
+                isVideoRunning = true;
+            }
+        }
+
+        function stopVideoFeed() {
+            if (isVideoRunning) {
+                videoFeed.src = ''; // Stop the video feed
+                isVideoRunning = false;
+            }
+        }
+    </script>
+</body>
+</html>
