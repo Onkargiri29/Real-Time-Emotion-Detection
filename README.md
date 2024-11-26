@@ -11,8 +11,6 @@ A Python-based application for detecting human emotions in real-time using a pre
 - [Project Structure](#project-structure)
 - [Future Scope](#future-scope)
 - [Contributors](#contributors)
-- [License](#license)
-
 ---
 
 ## Features
