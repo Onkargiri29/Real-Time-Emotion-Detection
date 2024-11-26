@@ -102,8 +102,10 @@ Real-Time-Emotion-Detection/
 
 ## Contributors
 - **Onkar Giri** - Repository owner and lead developer.
+- **Asmita Teli** -Front-End Developer
+- **Harshvardhan Killedar** - Documentation Head
+- **Rohan Patil** - Overall Co-ordinator 
 
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
 
 ---
 
