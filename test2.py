@@ -4,6 +4,7 @@ from keras.models import model_from_json
 import numpy as np
 import threading
 import time
+import os
 
 app = Flask(__name__)
 
@@ -84,5 +85,5 @@ def video_feed():
     """Feeds the video stream to the frontend."""
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=8080)
+if _name_ == '_main_':
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
